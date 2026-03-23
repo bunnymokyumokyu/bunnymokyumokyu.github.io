@@ -503,6 +503,7 @@ header {
 .sub-footer {
     aspect-ratio: 1024 / 350;
     background: url("../images/subfooter.webp") center / contain no-repeat;
+    border-radius: 0 0 10px 10px;
 }
 
 .banner-ribbon {
@@ -860,7 +861,6 @@ header {
 }
 
 .x-btn:hover {
-    background: black;
     transform: translateY(-3px);
     transition: 0.15s;
 }
@@ -1255,7 +1255,7 @@ body.modal-open {
     margin: 1em 0;
 }
 
-.specialpost {
+.specialpost01 {
     width: 100%;
     font-weight: 600;
     font-size: 3em;
@@ -1749,7 +1749,7 @@ body.modal-open {
     .photo-box1, .photo-box2, .name-box {
     width: calc(min(17.61vw, 250px) * 1.25);
     }
-
+}
     
 
 @media (max-width: 365px) {
@@ -1771,7 +1771,7 @@ body.modal-open {
 
 
 
-}
+
 
 
 

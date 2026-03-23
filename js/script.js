@@ -104,6 +104,12 @@ function closeModal() {
     if (e.propertyName !== "transform") return;
     modalImage.removeEventListener("transitionend", onCloseEnd);
 
+    if (activeThumbnail) {
+      activeThumbnail.focus();
+    } else {
+      modalClose.blur();
+    }
+
     modalOverlay.classList.remove("is-open");
     modalOverlay.setAttribute("aria-hidden", "true");
     document.body.classList.remove("modal-open");
